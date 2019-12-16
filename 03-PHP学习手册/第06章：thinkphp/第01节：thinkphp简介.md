@@ -41,7 +41,7 @@ thinkphp这几年来比较火的历史版本，表格如下：
 
 控制器（C）：应用控制器（核心控制器）和Action控制器都承担了控制器的角色，区别在于Action控制器完成业务过程，而应用控制器（App类）负责调度控制。Action控制器位于项目目录下面的LibAction目录。
 
-thinkphp遵循着MVC的基本原则
+thinkphp遵循着MVC的设计模式
 
 ### 五、thinkphp - 优势
 
