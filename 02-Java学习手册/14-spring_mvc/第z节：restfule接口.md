@@ -1,4 +1,5 @@
 # 第05节：Restfule接口
+
 之前一节我们讲解了拦截器的作用及应用,这一节我们使用restfule接口来进行实践操作
 
 ### 一、Restfule接口概述
@@ -11,13 +12,17 @@
 　　Java平台的SpringMVC主键在Web开发中取代了Struts2而占据了更加有力的地位，我们今天着重讲解如何在Java SpringMVC项目中实现Restful api。
 
 ### 二、实现思路
+
 Restful api的实现脱离不了路由，这里我们的Restful api路由,由spring mvc的controller来实现。
 
 ### 实现过程
 
 #### 1、搭建spring mvc maven项目
+
 这里的搭建步骤不再赘述，如有需要参考请复习前几章
+
 #### 2、新建控制器 StudentController
+
 为了体现Restful api 我们采用注解，RequestMapping("/api/Student")
 
 具体代码如下：
@@ -56,10 +61,11 @@ public class StudentController {
     }
 }
 ```
+
 这里有Get，Post，Put，Delete分别对应 查询，添加，修改，删除四种对资源的操作，即通常所说的CRUD。
 
 spring mvc可实现restful的方式有@Controller和@RestController两种方式，两种方式的区别如下：
-@Controller的方式实现如果要返回json，xml等文本，方法体上需要额外添加@ResponseBody注解，例如：　
+@Controller的方式实现如果要返回json，xml等文本，方法体上需要额外添加@ResponseBody注解，例如：
 
 ``` java
 @ResponseBody    //用于返回json数据或者text格式文本
@@ -78,6 +84,7 @@ spring mvc可实现restful的方式有@Controller和@RestController两种方式�
 3         return "{\"id\":\""+id+"\",\"name\":\"get path variable id\"}";
 4     }
 ```
+
 该方法可以直接在url拼接一个参数，更加方便对资源的定向访问，例如查一个student list 可以默认空参数，而查询对应的某一个student详情信息，可以id=studentId 定向查询单条，使得我们对资源的访问更加快捷方便。
 
 还有一种更加简洁的写法，Spring4.3中引进了｛@GetMapping、@PostMapping、@PutMapping、@DeleteMapping、@PatchMapping｝几种写法，让接口的声明更加地简洁。下面代码展示了用这种注解方式进行Rest接口的定义：
@@ -119,6 +126,7 @@ public class StudentController {
 ```
 
 ### 系统测试
+
 运行系统，使用fiddler调用restful api接口：
 #### 1.Get方式
 ![images](../images/1405_img.png)
