@@ -362,8 +362,4 @@ HttpServletRequest，置入其中的数据是请求范围的，可以完成跨 S
 
 ### 十、总结
 
-<<<<<<< HEAD
 以上就是cookie和seession的讲解了，[点击查看本节代码案例](https://github.com/xiaozhoulee/java-examples/tree/master/12-servlet%E4%B8%8Ejsp/%E7%AC%AC05%E8%8A%82%EF%BC%9Acookie%E4%B8%8Esession/javaee%20cs)
-=======
-以上就是cookie和seession的讲解了，[点击查看本节代码案例](https://github.com/xiaozhoulee/java-examples/tree/master/12-servlet%E4%B8%8Ejsp/%E7%AC%AC%E5%9B%9B%E8%8A%82%EF%BC%9Acookie%E4%B8%8Esession/javaee%20cs)
->>>>>>> liaofeng
