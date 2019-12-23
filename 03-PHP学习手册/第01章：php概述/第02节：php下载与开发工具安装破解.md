@@ -1,11 +1,14 @@
 # 第02节:php的下载与开发工具的安装破解
-上一节我们讲解了php的历史，本节我们主要来讲解php的安装和主要开发工具phpStrom的下载与破解
+上一节我们讲解了php的历史及特点，本节我们主要来讲解php的安装和主要开发工具phpStrom的下载与破解
 
 ### 一、学习目标
 从官网下载安装php压缩包并解压到相关目录与php现在流行开发工具phpStrom的安装并破解这一款软件
 
 ### 二、php安装
-#### 1.在PHP下载页面下载最新安装包 https://windows.php.net/download
+
+#### 1.在PHP下载页面下载最新安装包 
+
+https://windows.php.net/download
 
 ![images](../images/0103_img.png)
 
@@ -16,14 +19,22 @@
 点击网址进入php官网，选中需要的安装包下载，下载到想要安装的路径下，这样我们的php安装就做好了
 
 ### 三、开发工具的安装
-#### 1.下载地址：http://www.jetbrains.com/phpstorm/然后点击
-![iamges](../images/0103_jpgjpg.png)
+#### 1.下载地址：
+http://www.jetbrains.com/phpstorm/
 
-#### 2.根据自己电脑的32or64位下载，下载完后就是这个：
+然后点击下面图片标识的按钮
+
+![images](../images/0103_jpgjpg.png)
+
+#### 2.根据自己电脑的32或64位下载，下载完后就是这个样子：
 ![images](../images/0103_images.png)
+
+它是以手动安装的形式去安装的
 
 #### 3.双击即可直接安装，点击Next选择安装路径：
 ![images](../images/0103_image.png)
+
+选择所需位置进行安装
 
 #### 4.在这里根据自己的电脑32位和64位以及自己需要用到的功能选择对应的选项，点击Next，
 ![images](../images/0103_imgs.png)
@@ -31,24 +42,29 @@
 #### 5.程序安装完成后，勾选Run并且点击finish，进入界面选择：
 ![images](../images/0103_pngs.png)
 
+这样我们的phpStrom就安装好了
+
 #### 6.选择自己喜欢的风格，然后下一步进入激活程序：
 ![images](../images/0103_logo.png)
 
-### 三、破解phpStorm
+推荐使用黑色，比较简节看着舒服并且保护眼睛
+
+### 四、破解phpStorm
 #### 1.打开PHPstorm到下面的界面:
 ![images](../images/0103_logos.png)
 
+选择Activation code这个按钮
 #### 2.这里我们来点击Activation code
 ![images](../images/0103_php.png)
 
+把下方激活码粘贴进去
 #### 3. 复制粘贴如下激活码，点击OK（目前有效期到2020年9月份，本激活码会不断更新）
 ``` html
 6ZUMD7WWWU-eyJsaWNlbnNlSWQiOiI2WlVNRDdXV1dVIiwibGljZW5zZWVOYW1lIjoiSmV0cyBHcm91cCIsImFzc2lnbmVlTmFtZSI6IiIsImFzc2lnbmVlRW1haWwiOiIiLCJsaWNlbnNlUmVzdHJpY3Rpb24iOiIiLCJjaGVja0NvbmN1cnJlbnRVc2UiOmZhbHNlLCJwcm9kdWN0cyI6W3siY29kZSI6IklJIiwiZmFsbGJhY2tEYXRlIjoiMjAxOS0wOS0wMyIsInBhaWRVcFRvIjoiMjAyMC0wOS0wMiJ9LHsiY29kZSI6IkFDIiwiZmFsbGJhY2tEYXRlIjoiMjAxOS0wOS0wMyIsInBhaWRVcFRvIjoiMjAyMC0wOS0wMiJ9LHsiY29kZSI6IkRQTiIsImZhbGxiYWNrRGF0ZSI6IjIwMTktMDktMDMiLCJwYWlkVXBUbyI6IjIwMjAtMDktMDIifSx7ImNvZGUiOiJQUyIsImZhbGxiYWNrRGF0ZSI6IjIwMTktMDktMDMiLCJwYWlkVXBUbyI6IjIwMjAtMDktMDIifSx7ImNvZGUiOiJHTyIsImZhbGxiYWNrRGF0ZSI6IjIwMTktMDktMDMiLCJwYWlkVXBUbyI6IjIwMjAtMDktMDIifSx7ImNvZGUiOiJETSIsImZhbGxiYWNrRGF0ZSI6IjIwMTktMDktMDMiLCJwYWlkVXBUbyI6IjIwMjAtMDktMDIifSx7ImNvZGUiOiJDTCIsImZhbGxiYWNrRGF0ZSI6IjIwMTktMDktMDMiLCJwYWlkVXBUbyI6IjIwMjAtMDktMDIifSx7ImNvZGUiOiJSUzAiLCJmYWxsYmFja0RhdGUiOiIyMDE5LTA5LTAzIiwicGFpZFVwVG8iOiIyMDIwLTA5LTAyIn0seyJjb2RlIjoiUkMiLCJmYWxsYmFja0RhdGUiOiIyMDE5LTA5LTAzIiwicGFpZFVwVG8iOiIyMDIwLTA5LTAyIn0seyJjb2RlIjoiUkQiLCJmYWxsYmFja0RhdGUiOiIyMDE5LTA5LTAzIiwicGFpZFVwVG8iOiIyMDIwLTA5LTAyIn0seyJjb2RlIjoiUEMiLCJmYWxsYmFja0RhdGUiOiIyMDE5LTA5LTAzIiwicGFpZFVwVG8iOiIyMDIwLTA5LTAyIn0seyJjb2RlIjoiUk0iLCJmYWxsYmFja0RhdGUiOiIyMDE5LTA5LTAzIiwicGFpZFVwVG8iOiIyMDIwLTA5LTAyIn0seyJjb2RlIjoiV1MiLCJmYWxsYmFja0RhdGUiOiIyMDE5LTA5LTAzIiwicGFpZFVwVG8iOiIyMDIwLTA5LTAyIn0seyJjb2RlIjoiREIiLCJmYWxsYmFja0RhdGUiOiIyMDE5LTA5LTAzIiwicGFpZFVwVG8iOiIyMDIwLTA5LTAyIn0seyJjb2RlIjoiREMiLCJmYWxsYmFja0RhdGUiOiIyMDE5LTA5LTAzIiwicGFpZFVwVG8iOiIyMDIwLTA5LTAyIn0seyJjb2RlIjoiUlNVIiwiZmFsbGJhY2tEYXRlIjoiMjAxOS0wOS0wMyIsInBhaWRVcFRvIjoiMjAyMC0wOS0wMiJ9XSwiaGFzaCI6IjE0Mjg5NzUwLzAiLCJncmFjZVBlcmlvZERheXMiOjcsImF1dG9Qcm9sb25nYXRlZCI6ZmFsc2UsImlzQXV0b1Byb2xvbmdhdGVkIjpmYWxzZX0=-Gd8RATyTEnHcAydKuC7N1ZdeLaMP9IR+nlPyVxvLsczAUTGKxcuAYbfz/uVtepg8ey4NfJlPNS+AGcGz8x7ImkX9jEV9KElMxPu3tKSdF/WKo6JCONX7UtudYa/9EQum3banxci/qH7jejSrFZSN+YjWQiYTR0Q8gq4/a2RyQTgseZfpImY/nXkOWLwWArr/p+4ddp/bWQN4nLTW+Z4ZaQeLE96Z9viCdn62EKOcR02Hfr9Oju9VYQh1L8pGrTqNey5nUSv/LQUbVwo5qoYbBRos8l6ewkFNGsuC3vtOgGWSgkgChbDjWhW4Nkm4vDM2NFAphMsS1dgyPw3eJ3C+6A==-MIIElTCCAn2gAwIBAgIBCTANBgkqhkiG9w0BAQsFADAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBMB4XDTE4MTEwMTEyMjk0NloXDTIwMTEwMjEyMjk0NlowaDELMAkGA1UEBhMCQ1oxDjAMBgNVBAgMBU51c2xlMQ8wDQYDVQQHDAZQcmFndWUxGTAXBgNVBAoMEEpldEJyYWlucyBzLnIuby4xHTAbBgNVBAMMFHByb2QzeS1mcm9tLTIwMTgxMTAxMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxcQkq+zdxlR2mmRYBPzGbUNdMN6OaXiXzxIWtMEkrJMO/5oUfQJbLLuMSMK0QHFmaI37WShyxZcfRCidwXjot4zmNBKnlyHodDij/78TmVqFl8nOeD5+07B8VEaIu7c3E1N+e1doC6wht4I4+IEmtsPAdoaj5WCQVQbrI8KeT8M9VcBIWX7fD0fhexfg3ZRt0xqwMcXGNp3DdJHiO0rCdU+Itv7EmtnSVq9jBG1usMSFvMowR25mju2JcPFp1+I4ZI+FqgR8gyG8oiNDyNEoAbsR3lOpI7grUYSvkB/xVy/VoklPCK2h0f0GJxFjnye8NT1PAywoyl7RmiAVRE/EKwIDAQABo4GZMIGWMAkGA1UdEwQCMAAwHQYDVR0OBBYEFGEpG9oZGcfLMGNBkY7SgHiMGgTcMEgGA1UdIwRBMD+AFKOetkhnQhI2Qb1t4Lm0oFKLl/GzoRykGjAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBggkA0myxg7KDeeEwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgWgMA0GCSqGSIb3DQEBCwUAA4ICAQAF8uc+YJOHHwOFcPzmbjcxNDuGoOUIP+2h1R75Lecswb7ru2LWWSUMtXVKQzChLNPn/72W0k+oI056tgiwuG7M49LXp4zQVlQnFmWU1wwGvVhq5R63Rpjx1zjGUhcXgayu7+9zMUW596Lbomsg8qVve6euqsrFicYkIIuUu4zYPndJwfe0YkS5nY72SHnNdbPhEnN8wcB2Kz+OIG0lih3yz5EqFhld03bGp222ZQCIghCTVL6QBNadGsiN/lWLl4JdR3lJkZzlpFdiHijoVRdWeSWqM4y0t23c92HXKrgppoSV18XMxrWVdoSM3nuMHwxGhFyde05OdDtLpCv+jlWf5REAHHA201pAU6bJSZINyHDUTB+Beo28rRXSwSh3OUIvYwKNVeoBY+KwOJ7WnuTCUq1meE6GkKc4D/cXmgpOyW/1SmBz3XjVIi/zprZ0zf3qH5mkphtg6ksjKgKjmx1cXfZAAX6wcDBNaCL+Ortep1Dh8xDUbqbBVNBL4jbiL3i3xsfNiyJgaZ5sX7i8tmStEpLbPwvHcByuf59qJhV/bZOl8KqJBETCDJcY6O2aqhTUy+9x93ThKs1GKrRPePrWPluud7ttlgtRveit/pcBrnQcXOl1rHq7ByB8CFAxNotRUYL9IF5n3wJOgkPojMy6jetQA5Ogc8Sm7RG6vg1yow==
 ```
 
-点击上面的官网，进入到phpStrom官网首页(过程可能有点缓慢)，点击图一红框里面的按钮下载，下载到指定位置，下载完毕后，点击图二中的文件安装，选择想要安装的路径，然后选择自己用到的功能及自己的电脑是32为还是64位，一直next继续，直到最后安装成功，打开安装好的phpStrom软件，选择风格，个人推荐黑色比较护眼，进入到php破解页面，我们来点击Activation code这个按钮来填写上面的破解码，这样我们这款软件就破解好了
+注意：本次的这个激活码只能激活到2020年9月，如到时间后想要再次激活，https://www.php.cn/tool/phpstorm/408348.html/，这篇文章的激活码是实时更新的
 
-### 四、作业
-* 1.了解php版本信息及版本特点
-* 2.查询有关于php的主流开发软件
-* 3.学习phpStrom的快捷键及创建一个php文件
+
+### 五、总结
+在本节的学习过程中我们学到了php的下载方式与主流编辑软件的安装与破解，注意：破解phpStrom编辑器不是永久破解的，如果9月份更新失效了，需要去上面网站进行激活码的更新
