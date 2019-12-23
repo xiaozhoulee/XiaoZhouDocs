@@ -1,13 +1,8 @@
 # 第05节：servlet监听器
 
-<<<<<<< HEAD
-### 一、监听器概述
-
-=======
 ### 一、什么时监听器？
 
 监听器和过滤器相似，既然既然它叫监听器，那它时监听什么的呢？  
->>>>>>> develop
 servlet中的监听器是用于监听web常见对象HttpServletRequest,HttpSession,ServletContext。主要有下面三个作用：
 
 * 1.监听web对象创建与销毁。
@@ -28,22 +23,14 @@ servlet中的监听器是用于监听web常见对象HttpServletRequest,HttpSessi
   * HttpSessionBindingListener
   * HttpSessionActivationListener
 
-<<<<<<< HEAD
-### 二、监听器的创建和使用
-javaweb创建监听器的步骤：
-=======
 ### 二、监听器的创建和使用步骤
->>>>>>> develop
 
 * 1.创建一个类，实现指定的监听器接口
 * 2.重写接口中的方法
 * 3.在web.xml文件中配置监听器
 
 #### 监听对象的创建和销毁
-<<<<<<< HEAD
-=======
 
->>>>>>> develop
 下面演示监听HttpServletRequest对象的销毁和创建。  
 1.创建一个类实现ServletRequestListener接口：
 
@@ -81,10 +68,7 @@ public class MyRequestListener implements ServletRequestListener {
 ```
 
 3.在web.xml文件中配置监听器
-<<<<<<< HEAD
-=======
 
->>>>>>> develop
 ``` xml
     <listener>
         <listener-class>com.listener.MyRequestListener</listener-class>
@@ -103,10 +87,7 @@ public class MyRequestListener implements ServletRequestListener {
 在监听ServletContext对象的创建与销毁时，创建一个类实现ServletContextListener接口并重写里面的方法即可。
 
 #### 监听属性的变化
-<<<<<<< HEAD
-=======
 
->>>>>>> develop
 以监听在HttpServletRequest对象中添加、修改、删除属性为例：  
 1.创建一个类实现ServletRequestAttributeListener接口：  
 
@@ -192,28 +173,17 @@ public class MyRequestAttributeListener implements ServletRequestAttributeListen
 ``` html
 向request中添加了一个属性
 属性名：name
-<<<<<<< HEAD
-属性值：monkey1024
-修改了request中的一个属性
-属性名：name
-属性值：monkey1024
-=======
 属性值：xiaozhoukj
 修改了request中的一个属性
 属性名：name
 属性值：admin
->>>>>>> develop
 从request中删除了一个属性
 属性名：name
 属性值：admin
 ```
-<<<<<<< HEAD
-#### 监听session绑定javabean
-=======
 
 #### 监听session绑定javabean
 
->>>>>>> develop
  监听ServletContext和HttpSession中的属性变化的操作同上。
 
  ttpSessionBindingListener监听器可以使javaBean对象在被绑定到会话或从会话中取消对它的绑定时得到通知。该监听器是由实体类来实现，需要注意的是该监听器的实现类不需要在web.xml文件中进行配置。
@@ -371,10 +341,7 @@ public class Person implements HttpSessionActivationListener, Serializable {
     session.setAttribute("person", p);
   %>
 ```
-<<<<<<< HEAD
-=======
 
->>>>>>> develop
 将数据持久化到硬盘中，
 
 4.在项目中的META-INF目录下创建一个content.xml的文件，在里面写上下面内容：
@@ -404,10 +371,6 @@ public class Person implements HttpSessionActivationListener, Serializable {
 
 自定义xml文件结束
 
-<<<<<<< HEAD
-以上内容就是servlet监听器了，下一节学习的内容是servlet注解。
-=======
 ### 三、总结
 
 以上内容就是servlet监听器了，下一节学习的内容是servlet上传文件。
->>>>>>> develop

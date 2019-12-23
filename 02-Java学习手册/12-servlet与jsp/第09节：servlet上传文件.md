@@ -243,9 +243,6 @@ Collection<Part> parts = request.getParts();
 在线文档：http://plugins.krajee.com/file-input
 在线demo：http://plugins.krajee.com/file-input/demo
 
-<<<<<<< HEAD
-=======
 ### 五、总结
 
->>>>>>> develop
 以上就是servlet上传文件了，下一节我们来学习servlet下载文件。
