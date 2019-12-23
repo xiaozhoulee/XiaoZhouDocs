@@ -1,0 +1,2 @@
+idea直接创建springmvc和通过maven创建springmvc的区别就是
+第一个是目录方面maven多了个pom.xml,就是自动东导入jar包那个，除了

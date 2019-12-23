@@ -1,8 +1,20 @@
+<<<<<<< HEAD
 # 第02节:Go语言map(映射)
 
 ###### 本节我们讲述Go语言map(映射)，那什么是映射，怎么使用映射，请看本节讲解:
 
 ### 一、map(映射)
+=======
+# 第02节:Go语言map
+
+###### 本节我们讲述Go语言map(集合)，那什么是集合，怎么使用集合，请看本节讲解:
+
+### 一、学习目标
+
+本节我们的学习目标是，了解map(集合)怎么使用map(集合)是做什么的;
+
+### 二、map(映射)
+>>>>>>> liaofeng
 
 map是一种无序的基于 `key-value` 的数据结构，Go语言中map是引用类型，必须初始化才能使用
 
@@ -31,7 +43,10 @@ make(map[KeyType]ValueType,[cap])
 
 map中的数据都是成对出现的，map的基本使用示例代码如下:
 [案例链接](https://github.com/Yan-Yan0129/Go-example/blob/master/%E7%AC%AC04%E7%AB%A0%EF%BC%9AGo%E8%AF%AD%E8%A8%80%E5%88%87%E7%89%87%E4%B8%8Emap(%E6%98%A0%E5%B0%84)/%E7%AC%AC01%E8%8A%82%EF%BC%9AGo%E8%AF%AD%E8%A8%80%E5%88%87%E7%89%87%E4%B9%8B%E5%9F%BA%E7%A1%80/demo03.md)
+<<<<<<< HEAD
 
+=======
+>>>>>>> liaofeng
 ```go
 func main() {
 	scoreMap := make(map[string]int, 8)
@@ -59,10 +74,16 @@ func main() {
 		"username": "你好Go",
 		"password": "123456",
 	}
+<<<<<<< HEAD
 	fmt.Println(userInfo) 
 }
 ```
 
+=======
+	fmt.Println(userInfo) //
+}
+```
+>>>>>>> liaofeng
 ##### 判断某个关键是否存在
 
 Go语言中有个判断map中键是否存在的特殊写法，格式如下:
@@ -73,7 +94,10 @@ value, ok := map[key]
 
 举个例子:
 [案例链接](https://github.com/Yan-Yan0129/Go-example/blob/master/%E7%AC%AC04%E7%AB%A0%EF%BC%9AGo%E8%AF%AD%E8%A8%80%E5%88%87%E7%89%87%E4%B8%8Emap(%E6%98%A0%E5%B0%84)/%E7%AC%AC02%E8%8A%82%EF%BC%9AGo%E8%AF%AD%E8%A8%80map(%E6%98%A0%E5%B0%84)/demo02.md)
+<<<<<<< HEAD
 
+=======
+>>>>>>> liaofeng
 ```go
 func main() {
 	scoreMap := make(map[string]int)
@@ -99,7 +123,10 @@ func main() {
 
 Go语言中使用 `for range` 遍历 map
 [案例链接](https://github.com/Yan-Yan0129/Go-example/blob/master/%E7%AC%AC04%E7%AB%A0%EF%BC%9AGo%E8%AF%AD%E8%A8%80%E5%88%87%E7%89%87%E4%B8%8Emap(%E6%98%A0%E5%B0%84)/%E7%AC%AC02%E8%8A%82%EF%BC%9AGo%E8%AF%AD%E8%A8%80map(%E6%98%A0%E5%B0%84)/demo03.md)
+<<<<<<< HEAD
 
+=======
+>>>>>>> liaofeng
 ```go
 func main() {
 	scoreMap := make(map[string]int)
@@ -120,6 +147,10 @@ func main() {
 李四 60
 ```
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> liaofeng
 但是我们只想遍历key的时候，可以按照以下写法:
 
 ```go
@@ -234,14 +265,26 @@ func main() {
 }
 ```
 
+<<<<<<< HEAD
 ### 二、总结
 
 本节我们学到了map(映射)的使用，分别讲述了对map的遍历，删除键对值，元素为map类型的切片，值为切片类型的map。
 
 ### 三、作业
+=======
+### 三、总结
+
+本节我们学到了map(集合)的使用，分别讲述了map的遍历，删除键对值，元素为map类型的切片，值为切片类型的map。
+
+### 四、作业
+>>>>>>> liaofeng
 
 1. 练习本章实例
 
 2. 写一个程序，统计一个字符串中每个单词出现的次数。比如：”how do you do”中how=1 do=2 you=1。
 
+<<<<<<< HEAD
 3. 熟记map(集合)知识点的书写格式;
+=======
+3. 熟记map(集合)知识点的书写格式
+>>>>>>> liaofeng

@@ -1,5 +1,6 @@
 # 第04节：servlet过滤器
 
+<<<<<<< HEAD
 ### 一、什么是servlet过滤器
 
 过滤器和其它语言的拦截器有些像，如果用现实生活中举例子的话，可以这样理解：  
@@ -11,6 +12,9 @@
 在上面的一段话中我们可以理解为，用户(男生)请求访问web应用(女生),通过拦截器(男生的妈妈)验证后允许访问。
 
 ### 二、为什么要学习过滤器？
+=======
+### 一、servlet过滤器是什么？
+>>>>>>> liaofeng
 
 Servlet 过滤器可以动态地拦截请求和响应，以变换或使用包含在请求或响应中的信息。  
 
@@ -18,7 +22,11 @@ Servlet 过滤器可以动态地拦截请求和响应，以变换或使用包含
 
 (2) 在Web应用将数据返回到用户之前，过滤器进行拦截和处理，然后再交给用户  
   
+<<<<<<< HEAD
 ### 三、过滤器的生命周期
+=======
+### 运行时简介
+>>>>>>> liaofeng
 
 * 过滤器可以有 0个或多个，顺序按照web.xml中声明的先后顺序进行处理（可以理解为多面墙，请求到来时先通过A墙，再通过B墙；响应发送时，先通过B墙，再通过A墙）
 
@@ -35,6 +43,7 @@ Servlet 过滤器可以动态地拦截请求和响应，以变换或使用包含
 
 完成过滤功能。 处理request可以完成作用1， 处理response可以完成作用2， 调用FilterChain的doFilter()方法可以调用下一个过滤器的doFilter()方法，直到无过滤器可调用，处理请求的Servlet或JSP  
 
+<<<<<<< HEAD
 ### 四、代码示例：
 
 ``` java
@@ -42,6 +51,11 @@ Servlet 过滤器可以动态地拦截请求和响应，以变换或使用包含
         filterName = "Filter",
         value = {"/*"}
 )
+=======
+代码示例：
+
+``` java
+>>>>>>> liaofeng
 public class MyFilter implements javax.servlet.Filter {
     public void destroy() {
         System.out.println("销毁");
@@ -63,6 +77,7 @@ public class MyFilter implements javax.servlet.Filter {
 
 ```
 
+<<<<<<< HEAD
 * 注意:在Filter的doFilter方法内如果没有执行chain.doFilter(req, resp);这段代码，那么也就没有过滤响应了。
 
 ``` java
@@ -75,6 +90,22 @@ public class MyFilter implements javax.servlet.Filter {
 
 * filterName表示文件名称
 * value表示全路径匹配，Filter的全路径匹配只支持/*，不支持/  
+=======
+* 注意:在Filter的doFilter方法内如果没有执行doFilter(request, response)方法，那么服务器中的资源是不会被访问到的。
+
+``` xml
+<filter>
+        <filter-name>MyFilter</filter-name>
+        <filter-class>com.boyikj.MyFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>MyFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+```
+
+表示全路径匹配，Filter的全路径匹配只支持/*，不支持/  
+>>>>>>> liaofeng
 
 将项目部署到tomcat并启动成功之后，会在控制台中看到下面信息：  
 初始化  
@@ -88,6 +119,7 @@ public class MyFilter implements javax.servlet.Filter {
 
 通过上面的操作，可以得出Filter的生命周期如下：  
 
+<<<<<<< HEAD
 * 当服务器启动，会创建Filter对象，并调用init方法，只调用一次.  
 * 当访问资源时，路径与Filter的拦截路径匹配，会执行Filter中的doFilter方法，这个方法是真正拦截操作的方法.  
 * 当服务器关闭时，会调用Filter的destroy方法来进行销毁操作.  
@@ -152,3 +184,21 @@ public class MyFilter implements javax.servlet.Filter {
 ### 五、总结
 
 以上就是servlet过滤器了，下节我们学习servlet监听器。
+=======
+当服务器启动，会创建Filter对象，并调用init方法，只调用一次.  
+当访问资源时，路径与Filter的拦截路径匹配，会执行Filter中的doFilter方法，这个方法是真正拦截操作的方法.  
+当服务器关闭时，会调用Filter的destroy方法来进行销毁操作.  
+一个Filter的生命周期跟servlet有些类似，需要经历初始化—>doFilter—>销毁三个过程。  
+
+#### dispatcher 标签
+在 filter-mapping 中还有一个子标签 dispatcher ，用于设置过滤器所过滤的请求类型。
+其有四种取值：REQUEST、FORWARD、INCLUDE、ERROR，默认是REQUEST
+* FORWARD
+若请求是由一个 Servlet 通过 RequestDispatcher 的 forward()方法所转发的， 那么这个请求将被值为 FORWARD 的 Filter 拦截。即当前 Filter 只会拦截由RequestDispatcher 的 forward()方法所转发的请求。其它请求均不拦截。
+* INCLUDE
+当前 Filter 只会拦截由 RequestDispatcher 的 include()方法所转发的请求。其它请求均不拦截
+* ERROR
+在 web.xml 中可以配置错误页面 error-page ，当发生指定状态码的错误后，会跳转到指定的页面。而这个跳转同样是发出的请求。若的值设置为 EEROR，则当前过滤器只会拦截转向错误页面的请求，其它请求不会拦截。
+
+以上就是servlet过滤器了。下节我们学习一下servlet监听器
+>>>>>>> liaofeng
