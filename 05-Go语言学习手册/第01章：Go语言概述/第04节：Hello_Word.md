@@ -14,6 +14,7 @@
 
 ### 一、创建Hello Word及运行项目
 
+<<<<<<< HEAD
 1. 打开vscode软件 创建Hell Word项目
 
 ![images](../images/0104_Establish.png)
@@ -25,6 +26,20 @@
 3. 新建后给项目命名为`main`，将项目保存为go文件，点击保存即可
 
 ![images](../images/0104_Newlybuilds.png)
+=======
+1. 打开goland软件 创建Hell Word项目
+
+![images](../images/0104_goland.png)
+
+2. 选择文件夹之后，右键点击新建，创建文件夹！
+
+![images](../images/0104_.Newlybuild.png)
+
+3. 新建后给项目命名为`main`，将项目保存为go文件，点击保存即可
+
+![images](../images/0104_.main.png)
+
+>>>>>>> develop
 
 4.写入代码 
 
@@ -38,6 +53,7 @@ func main(){  // main函数，是程序执行的入口
 }
 ```
 
+<<<<<<< HEAD
 ![images](../images/0104_write.png)
 
 5. 右键文件夹 使用终端打开 输入输出命令`go build`进行编译 
@@ -49,6 +65,17 @@ func main(){  // main函数，是程序执行的入口
 ![images](../images/0104_run.png)
 
 
+=======
+
+![images](../images/0104_write.png)
+
+
+5. 运行
+右键代码后点击run go buil main.go它就会自动运行mian.go程序。
+
+![images](../images/0104_run.png)
+
+>>>>>>> develop
 ### 二、代码讲解
 
 [案例链接](https://github.com/Yan-Yan0129/Go-example/blob/master/%E7%AC%AC01%E7%AB%A0%EF%BC%9AGo%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/%E7%AC%AC04%E8%8A%82%EF%BC%9AHello_Word/demo01.md)
@@ -85,4 +112,8 @@ Print 和 Println 这两个函数也支持使用变量，如：fmt.Println(arr)�
 
 ### 四、作业
 
+<<<<<<< HEAD
 1. 通过本节的讲解练习我们的第一个案例: Hello_word
+=======
+1. 通过本节的讲解练习我们的第一个案例: Hello word!
+>>>>>>> develop

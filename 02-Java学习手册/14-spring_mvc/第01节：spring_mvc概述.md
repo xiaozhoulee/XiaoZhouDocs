@@ -18,9 +18,15 @@ MVC 模式（Model-View-Controller）：为了解决页面代码和后台代码�
 
 ### 三、 为什么要学习 SpringMVC
 
+<<<<<<< HEAD
 问题：我们已经学习了 Servlet/JSP 了。为什么还要学习 SpringMVC 呢？
 
 我们知道，Servlet /JSP就是一套MVC模式的实现，SpringMVC也是MVC的实现，那么学SpringMVC的意义在哪里？
+=======
+问题：
+我们知道，我们已经学习了 Servlet/JSP 了。为什么还要学习 SpringMVC 呢？
+Servlet /JSP就是一套MVC模式的实现，SpringMVC也是MVC的实现，那么学SpringMVC的意义在哪里？
+>>>>>>> develop
 
 SpringMVC不仅仅是MVC的实现，它还是一个框架。这意味着，除了MVC的实现以外还提供了大量的辅助页面请求处理的功能组件。
 
@@ -51,4 +57,8 @@ SpringMVC不仅仅是MVC的实现，它还是一个框架。这意味着，除�
 
 ### 五、总结
 
+<<<<<<< HEAD
 我们对SpringMVC有个概念性了解了，接下来我们学习具体如何写SpringMVC。
+=======
+我们对SpringMVC有个概念性了解了，接下来我们学习maven管理SpringMVC项目。
+>>>>>>> develop

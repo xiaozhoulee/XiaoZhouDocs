@@ -9,6 +9,10 @@ MyBatis是一款一流的支持自定义SQL、存储过程和高级映射的持�
 
 #### 为什么要学习MyBatis?
 
+<<<<<<< HEAD
+=======
+Mybatis属于持久层  
+>>>>>>> develop
 持久层类型的技术有好多种..
 
 * Hibernate
