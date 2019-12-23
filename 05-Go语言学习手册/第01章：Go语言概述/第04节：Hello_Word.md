@@ -14,17 +14,17 @@
 
 ### 一、创建Hello Word及运行项目
 
-1. 打开vscode软件 创建Hell Word项目
+1. 打开goland软件 创建Hell Word项目
 
-![images](../images/0104_Establish.png)
+![images](../images/0104_goland.png)
 
-2. 选择文件夹之后点击新建文件！
+2. 选择文件夹之后，右键点击新建，创建文件夹！
 
-![images](../images/0104_Newlybuild.png)
+![images](../images/0104_.Newlybuild.png)
 
 3. 新建后给项目命名为`main`，将项目保存为go文件，点击保存即可
 
-![images](../images/0104_main.png)
+![images](../images/0104_.main.png)
 
 
 4.写入代码 
@@ -39,16 +39,14 @@ func main(){  // main函数，是程序执行的入口
 }
 ```
 
+
 ![images](../images/0104_write.png)
 
-5. 右键文件夹 使用终端打开 输入输出命令`go build`进行编译 
 
-![images](../images/0104_cmd.png)
-
-6. 编译通过后开始执行命令` go run main.go `最后输出Hello Word！ 
+5. 运行
+右键代码后点击run go buil main.go它就会自动运行mian.go程序。
 
 ![images](../images/0104_run.png)
-
 
 ### 二、代码讲解
 
