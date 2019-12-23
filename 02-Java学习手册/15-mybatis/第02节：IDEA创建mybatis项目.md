@@ -28,11 +28,9 @@ CREATE DATABASE mybatis
 USE mybatis
 
 CREATE TABLE `user` (
-  `id` int(11) NOT NULL auto_increment,
-  `username` varchar(32) NOT NULL COMMENT '用户名称',
-  `birthday` datetime default NULL COMMENT '生日',
-  `sex` char(1) default NULL COMMENT '性别',
-  `address` varchar(256) default NULL COMMENT '地址',
+  `id` int(20) NOT NULL,
+  `name` varchar(32) DEFAULT NULL,
+  `pwd` varchar(32) DEFAULT NULL,
   PRIMARY KEY  (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -41,12 +39,14 @@ CREATE TABLE `user` (
 insert  into `user`(`id`,`username`,`birthday`,`sex`,`address`) values (41,'老王','2018-02-27 17:47:08','男','北京'),(42,'小二王','2018-03-02 15:09:37','女','北京金燕龙'),(43,'小二王','2018-03-04 11:34:34','女','北京金燕龙'),(45,'传智播客','2018-03-04 12:04:06','男','北京金燕龙'),(46,'老王','2018-03-07 17:37:26','男','北京'),(48,'小马宝莉','2018-03-08 11:44:00','女','北京修正');
 ```
 
-#### pom.xml
+#### 1.pom.xml
 
 如果我们想使用mybatis，不仅要下载mybatis依赖，还要下载mysql依赖等。
 
 ``` xml
-<!--导入依赖-->
+<!-- pom.xml -->
+
+ <!--导入依赖-->
     <dependencies>
         <!--mysql驱动-->
         <dependency>
@@ -60,22 +60,16 @@ insert  into `user`(`id`,`username`,`birthday`,`sex`,`address`) values (41,'老�
             <artifactId>mybatis</artifactId>
             <version>3.5.2</version>
         </dependency>
-        <!--junit（单元测试）-->
+        <!--junit-->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.12</version>
         </dependency>
-              <!-- 导入日志包-->
-      <dependency>
-        <groupId>log4j</groupId>
-        <artifactId>log4j</artifactId>
-        <version>1.2.17</version>
-      </dependency>
     </dependencies>
 ```
-
-#### 创建实体类和dao接口
+<!-- --- -->
+<!-- #### 创建实体类和dao接口
 
 如下目录创建
 
@@ -116,9 +110,9 @@ public interface UserDao {
     //查询所有
     List<User> findAll();
 }
-```
+``` -->
 
-#### 创建mybatis的主配置文件和映射配置文件
+#### 2.创建mybatis的主配置文件和映射配置文件
 
 再咱们的resources配置文件下面创建mybatiscof.xml文件和UserDao.xml配置映射文件
 ![ml2](../images/1502_ml3.png)
@@ -157,7 +151,107 @@ public interface UserDao {
 </configuration>
 ```
 
-接下来创建UserDao.xml文件来映射之前的dao接口
+#### 3.编写mybatis工具类
+
+``` java
+// MybatisUtils
+package com.xiaozhoubg.utils;
+
+import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+
+import java.io.IOException;
+import java.io.InputStream;
+
+public class MybatisUtils {
+    private static SqlSessionFactory sqlSessionFactory;
+    static {
+        try {
+            //    读取配置文件
+            String resource = "mybatis-config.xml";
+            InputStream inputStream = Resources.getResourceAsStream(resource);
+            sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+    //既然有了 SqlSessionFactory，顾名思义，我们就可以从中获得 SqlSession 的实例了。
+    // SqlSession 完全包含了面向数据库执行 SQL 命令所需的所有方法。
+    // 你可以通过 SqlSession 实例来直接执行已映射的 SQL 语句。
+    public  static SqlSession getSqlSession(){
+        return sqlSessionFactory.openSession();
+    }
+}
+```
+
+#### 4.编写实体类
+
+``` java
+// User
+// 注意这个实体类里的私有类名必须和之前数据库创建的字段名名称一样
+package com.xiaozhoubg.pojo;
+
+public class User {
+    private  int id;
+    private  String name;
+    private  String pwd;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getPwd() {
+        return pwd;
+    }
+
+    public void setPwd(String pwd) {
+        this.pwd = pwd;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", pwd='" + pwd + '\'' +
+                '}';
+    }
+}
+
+```
+
+#### 5.编写dao接口
+
+``` java
+ package com.rui.dao;
+  
+  import com.rui.pojo.User;
+  
+  import java.util.List;
+  
+  public interface UserDao {
+      List<User> getUserList();
+  }
+```
+
+
+
+<!-- 接下来创建UserDao.xml文件来映射之前的dao接口
 
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -173,15 +267,18 @@ public interface UserDao {
     </select>
 </mapper>
 
-```
+``` -->
 
 到这里咱们的基本配置就ok了。
 
 ### 三、配置框架流程分析
 
 咱们已经创建好了基本环境，下面咱们把创建的流程分析一下，让大家有个具体的印象
-
+1. 搭建数据库
 1. 创建maven工程，导入依赖
+   创建mybatis的主配置文件mybatis-config.xml来配置数据库
+
+
 2. 创建实体类（domain）和dao的接口（dao）。数据库的方法都实现再dao接口中
 3. 创建mybatis的主配置文件mybatisConfig.xml来配置数据库和映射文件
 4. 创建映射配置文件UserDao.xml来映射dao之前的接口
