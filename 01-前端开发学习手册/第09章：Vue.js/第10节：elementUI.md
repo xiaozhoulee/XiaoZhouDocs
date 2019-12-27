@@ -89,3 +89,8 @@ new Vue({
 下面是vue+elementUI写的一个学生列表，可以当作一个参考  
 [案例参考](https://github.com/xiaozhoulee/xiaozhou-examples/tree/master/07-基于Vue的web项目开发/第05节%EF%BC%9Aelement/学生列表
 )
+
+### 五、课后练习
+
+1. 使用element-ui完成一个学生列表的添加和删除功能。
+2. 使用element-ui完成一个学生列表单选删除和全选删除功能

@@ -80,3 +80,8 @@ const store = new Vuex.Store({
 store.commit('increment') // 调用 mutations 中的方法
 console.log(store.state.count) // -> 1
 ```
+
+### 课后练习
+
+1. 使用vuex完成一个计数器功能，让数值不能小于0
+2. 使用vuex完成一个水果列表的添加和删除功能
