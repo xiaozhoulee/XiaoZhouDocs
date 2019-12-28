@@ -4,7 +4,7 @@
 
 ### 一、net/http介绍
 
-##### Go语言内置的`net/http`包提供了HTTP客户端和服务端的实现
+Go语言内置的`net/http`包提供了HTTP客户端和服务端的实现
 
 ### 二、HTTP协议
 

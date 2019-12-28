@@ -1,6 +1,6 @@
 # 第09节:Go语言标准库之context
 
-##### 上一节给大家讲述了`net/http`包，这节将大家讲述Go语言标准库值Context
+上一节给大家讲述了`net/http`包，这节将大家讲述Go语言标准库值Context
 
 ### 一、为什么需要Context
 

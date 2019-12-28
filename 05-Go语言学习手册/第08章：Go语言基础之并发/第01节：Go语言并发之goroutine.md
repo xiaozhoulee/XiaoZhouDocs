@@ -73,7 +73,6 @@ func main() {
 ##### 启动多个goroutine
 
 在Go语言中实现并发就是这么简单，我们还可以启动多个`goroutine`，让我们来举个例子：(这里我们使用了`sync.WaitGrop`来实现goroutine的同步)
-[案例链接](https://github.com/Yan-Yan0129/Go-example/blob/master/%E7%AC%AC08%E7%AB%A0%EF%BC%9AGo%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E4%B9%8B%E5%B9%B6%E5%8F%91/%E7%AC%AC01%E8%8A%82%EF%BC%9AGo%E8%AF%AD%E8%A8%80%E5%B9%B6%E5%8F%91%E4%B9%8Bgoroutine/demo01.md)
 
 ```go
 var wg sync.WaitGroup
@@ -91,7 +90,6 @@ func main() {
 	wg.Wait() // 等待所有登记的goroutine都结束
 }
 ```
-
 
 以上实例输出结果为:
 
