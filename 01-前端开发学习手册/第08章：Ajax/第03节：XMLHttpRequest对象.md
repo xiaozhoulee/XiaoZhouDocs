@@ -6,9 +6,6 @@ Ajax 的全称是Asynchronous JavaScript and XML（异步的JavaScript 和 XML�
 
 上一节我们使用jQuery实现了异步交互数据，本节我们不依赖任何库和框架来实现异步数据交互。
 
-
-
-
  #### 使用xhr（也就是XMLhttpRequest）实现数据请求
 ``` html
 <script>
